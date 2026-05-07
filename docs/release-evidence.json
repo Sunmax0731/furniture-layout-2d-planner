@@ -1,7 +1,21 @@
 {
   "product": "furniture-layout-2d-planner",
+  "repository": "Sunmax0731/furniture-layout-2d-planner",
+  "githubUrl": "https://github.com/Sunmax0731/furniture-layout-2d-planner",
   "tag": "v0.1.0-alpha.1",
-  "status": "pending-release",
+  "releaseUrl": "https://github.com/Sunmax0731/furniture-layout-2d-planner/releases/tag/v0.1.0-alpha.1",
+  "prerelease": true,
+  "assetCount": 3,
+  "assets": [
+    "furniture-layout-2d-planner-docs.zip",
+    "manual-test.md",
+    "strict-manual-test-addendum.md"
+  ],
+  "latestCheck": {
+    "exitCode": 1,
+    "isLatest": false,
+    "evidence": "releases/latest returned 404 or did not return this prerelease tag"
+  },
   "manualTest": "not-run-by-codex",
-  "generatedAt": "2026-05-07T23:57:05Z"
+  "checkedAt": "2026-05-07T23:57:18Z"
 }
