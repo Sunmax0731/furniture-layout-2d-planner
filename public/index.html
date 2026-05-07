@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>家具配置2Dプランナー</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main data-product-root="furniture-layout-2d-planner" class="shell">
+    <header class="topbar">
+      <div>
+        <h1>家具配置2Dプランナー</h1>
+        <p>部屋寸法と家具寸法だけで配置案を比較する静的Webプランナー</p>
+      </div>
+      <button id="run-review" type="button">レビュー実行</button>
+    </header>
+    <section class="workspace">
+      <div class="panel">
+        <h2>代表シナリオ</h2>
+        <ul id="scenario-list"></ul>
+      </div>
+      <div class="panel">
+        <h2>次アクション</h2>
+        <p id="next-action">家具サイズと導線余白から配置の警告を返す</p>
+        <output id="result">未実行</output>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
