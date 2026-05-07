@@ -1,0 +1,96 @@
+{
+  "product": "furniture-layout-2d-planner",
+  "generatedAt": "2026-05-07T23:57:05Z",
+  "scenarios": [
+    {
+      "id": "happy-path",
+      "records": [
+        {
+          "title": "家具配置2Dプランナー",
+          "roomSize": "家具配置2Dプランナー roomSize",
+          "itemSize": "家具配置2Dプランナー itemSize",
+          "clearanceNote": "家具配置2Dプランナー clearanceNote",
+          "reviewDate": "家具配置2Dプランナー reviewDate",
+          "id": "hp-001",
+          "nextAction": "家具サイズと導線余白から配置の警告を返す"
+        }
+      ],
+      "expected": {
+        "passes": 1,
+        "failures": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "id": "missing-required",
+      "records": [
+        {
+          "roomSize": "家具配置2Dプランナー roomSize",
+          "itemSize": "家具配置2Dプランナー itemSize",
+          "clearanceNote": "家具配置2Dプランナー clearanceNote",
+          "reviewDate": "家具配置2Dプランナー reviewDate",
+          "id": "missing-001",
+          "nextAction": "家具サイズと導線余白から配置の警告を返す"
+        }
+      ],
+      "expected": {
+        "passes": 0,
+        "failures": 1,
+        "warnings": 0
+      }
+    },
+    {
+      "id": "warning",
+      "records": [
+        {
+          "title": "家具配置2Dプランナー",
+          "roomSize": "家具配置2Dプランナー roomSize",
+          "itemSize": "家具配置2Dプランナー itemSize",
+          "reviewDate": "家具配置2Dプランナー reviewDate",
+          "id": "warn-001",
+          "nextAction": "家具サイズと導線余白から配置の警告を返す"
+        }
+      ],
+      "expected": {
+        "passes": 0,
+        "failures": 0,
+        "warnings": 1
+      }
+    },
+    {
+      "id": "mixed-batch",
+      "records": [
+        {
+          "title": "家具配置2Dプランナー",
+          "roomSize": "家具配置2Dプランナー roomSize",
+          "itemSize": "家具配置2Dプランナー itemSize",
+          "clearanceNote": "家具配置2Dプランナー clearanceNote",
+          "reviewDate": "家具配置2Dプランナー reviewDate",
+          "id": "mixed-ok-001",
+          "nextAction": "家具サイズと導線余白から配置の警告を返す"
+        },
+        {
+          "title": "家具配置2Dプランナー",
+          "roomSize": "家具配置2Dプランナー roomSize",
+          "clearanceNote": "家具配置2Dプランナー clearanceNote",
+          "reviewDate": "家具配置2Dプランナー reviewDate",
+          "id": "mixed-bad-001",
+          "nextAction": "家具サイズと導線余白から配置の警告を返す"
+        },
+        {
+          "title": "家具配置2Dプランナー",
+          "roomSize": "家具配置2Dプランナー roomSize",
+          "itemSize": "家具配置2Dプランナー itemSize",
+          "reviewDate": "家具配置2Dプランナー reviewDate",
+          "id": "warn-001",
+          "nextAction": "家具サイズと導線余白から配置の警告を返す"
+        }
+      ],
+      "expected": {
+        "passes": 1,
+        "failures": 1,
+        "warnings": 1
+      }
+    }
+  ]
+}
