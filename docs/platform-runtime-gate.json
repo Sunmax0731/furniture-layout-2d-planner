@@ -1,0 +1,13 @@
+{
+  "product": "furniture-layout-2d-planner",
+  "title": "家具配置2Dプランナー",
+  "domain": "WebApp",
+  "ideaNo": 7,
+  "platformType": "browser-web",
+  "expectedPublicTarget": "GitHub Pages / GitHub Release",
+  "browser": {
+    "evidence": "dist/web-smoke-result.json"
+  },
+  "android": null,
+  "evidence": "dist/platform-runtime-gate-result.json"
+}
