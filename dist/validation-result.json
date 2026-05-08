@@ -1,7 +1,7 @@
 {
   "product": "furniture-layout-2d-planner",
   "domain": "WebApp",
-  "generatedAt": "2026-05-07T23:57:18.839Z",
+  "generatedAt": "stable-validation-run",
   "totals": {
     "passes": 2,
     "failures": 2,
