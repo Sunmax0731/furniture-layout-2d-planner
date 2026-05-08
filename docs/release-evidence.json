@@ -2,37 +2,61 @@
   "product": "furniture-layout-2d-planner",
   "repository": "Sunmax0731/furniture-layout-2d-planner",
   "githubUrl": "https://github.com/Sunmax0731/furniture-layout-2d-planner",
-  "tag": "v0.1.0-alpha.1",
   "releaseUrl": "https://github.com/Sunmax0731/furniture-layout-2d-planner/releases/tag/v0.1.0-alpha.1",
+  "tag": "v0.1.0-alpha.1",
   "prerelease": true,
-  "assetCount": 3,
-  "assets": [
-    "furniture-layout-2d-planner-docs.zip",
-    "manual-test.md",
-    "strict-manual-test-addendum.md"
-  ],
-  "latestCheck": {
-    "exitCode": 1,
-    "isLatest": false,
-    "evidence": "releases/latest returned 404 or did not return this prerelease tag"
-  },
-  "manualTest": "not-run-by-codex",
-  "checkedAt": "2026-05-07T23:57:18Z",
   "latest": false,
-  "platformRuntimeGate": "dist/platform-runtime-gate-result.json",
-  "platformType": "browser-web",
+  "latestCheck": {
+    "endpoint": "not-found-or-no-stable-release",
+    "latestTag": null,
+    "latestIsThisPrerelease": false
+  },
+  "assetCount": 3,
+  "assets": {
+    "required": [
+      "dist/furniture-layout-2d-planner-docs.zip",
+      "docs/manual-test.md",
+      "docs/strict-manual-test-addendum.md"
+    ],
+    "actualNames": [
+      "furniture-layout-2d-planner-docs.zip",
+      "manual-test.md",
+      "strict-manual-test-addendum.md"
+    ],
+    "actualCount": 3,
+    "allRequiredPresent": true
+  },
   "qcdsEvaluation": {
     "Quality": "S-",
     "Cost": "S-",
     "Delivery": "S-",
-    "Satisfaction": "S-",
-    "capReason": "manual-test-not-run-by-codex"
+    "Satisfaction": "S-"
   },
-  "github": {
-    "repo": "Sunmax0731/furniture-layout-2d-planner",
-    "url": "https://github.com/Sunmax0731/furniture-layout-2d-planner",
-    "releaseUrl": "https://github.com/Sunmax0731/furniture-layout-2d-planner/releases/tag/v0.1.0-alpha.1",
-    "prerelease": true,
-    "latest": false
+  "platformRuntimeGate": {
+    "product": "furniture-layout-2d-planner",
+    "platformType": "browser-web",
+    "pass": true,
+    "method": "runtime-gate",
+    "manualTest": "not-run-by-codex",
+    "index": "public/index.html",
+    "browser": "chrome.exe",
+    "evidence": "dist/web-smoke-result.json"
+  },
+  "automatedTests": [
+    {
+      "command": "npm test",
+      "result": "passed"
+    }
+  ],
+  "manualTest": "not-run-by-codex",
+  "git": {
+    "ahead": 0,
+    "behind": 0,
+    "status": "",
+    "localCodex": [
+      "codex/closed-alpha-release"
+    ],
+    "remoteCodex": [],
+    "clean": false
   }
 }
